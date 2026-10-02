@@ -1,0 +1,245 @@
+/* ============================================================
+   BUOYANT WISDOM — Privacy Policy Styles
+   Add this to your existing CSS file.
+   Matches the look and feel of your FAQ section.
+   ============================================================ */
+
+/* ── Hero / intro block ─────────────────────────────────── */
+
+.bw-privacy-hero {
+  text-align: center;
+  padding: 60px 24px 40px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.bw-section-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #6b7a8d;
+  margin: 0 0 16px;
+  text-transform: none;
+}
+
+.bw-privacy-headline {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 400;
+  color: #1a2e5a;
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+
+.bw-privacy-subhead {
+  font-size: 1rem;
+  color: #1a2e5a;
+  line-height: 1.65;
+  margin: 0;
+  opacity: 0.75;
+}
+
+/* ── Body wrapper ───────────────────────────────────────── */
+
+.bw-privacy-body {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 24px 80px;
+}
+
+/* ── Intro prose ────────────────────────────────────────── */
+
+.bw-privacy-prose {
+  margin-bottom: 48px;
+}
+
+.bw-privacy-prose p {
+  font-size: 0.97rem;
+  color: #3a4a5c;
+  line-height: 1.75;
+  margin: 0 0 14px;
+}
+
+.bw-effective-date {
+  font-size: 0.82rem !important;
+  color: #6b7a8d !important;
+  font-style: italic;
+  margin-bottom: 18px !important;
+}
+
+/* ── FAQ / Accordion label ──────────────────────────────── */
+
+.bw-faq-label {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a2e5a;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 0.01em;
+}
+
+/* ── Accordion container ────────────────────────────────── */
+
+.bw-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 48px;
+}
+
+/* ── Accordion item ─────────────────────────────────────── */
+
+.bw-accordion-item {
+  background: #f2f2f2;
+  border-radius: 8px;
+  overflow: hidden;
+  /* Matches the subtle card feel from your screenshot */
+}
+
+.bw-accordion-item.bw-open {
+  border: 1.5px solid #c5d4e8;
+}
+
+/* ── Trigger (question row) ─────────────────────────────── */
+
+.bw-accordion-trigger {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 22px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  gap: 16px;
+}
+
+.bw-accordion-trigger:hover {
+  background: #eaecf0;
+}
+
+.bw-accordion-trigger span:first-child {
+  font-size: 0.97rem;
+  font-weight: 700;
+  color: #1a2e5a;
+  line-height: 1.4;
+}
+
+.bw-accordion-icon {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #1a2e5a;
+  flex-shrink: 0;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+/* ── Panel (answer) ─────────────────────────────────────── */
+
+.bw-accordion-panel {
+  padding: 4px 22px 20px;
+}
+
+.bw-accordion-panel p {
+  font-size: 0.93rem;
+  color: #3a4a5c;
+  line-height: 1.75;
+  margin: 0 0 12px;
+}
+
+.bw-accordion-panel p:last-child {
+  margin-bottom: 0;
+}
+
+.bw-accordion-panel ul {
+  margin: 8px 0 16px 18px;
+  padding: 0;
+}
+
+.bw-accordion-panel li {
+  font-size: 0.93rem;
+  color: #3a4a5c;
+  line-height: 1.7;
+  margin-bottom: 6px;
+}
+
+.bw-accordion-panel a {
+  color: #1a2e5a;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.bw-accordion-panel a:hover {
+  opacity: 0.7;
+}
+
+.bw-note {
+  font-style: italic;
+  color: #6b7a8d !important;
+  font-size: 0.88rem !important;
+  border-left: 3px solid #c5d4e8;
+  padding-left: 12px;
+  margin-top: 12px !important;
+}
+
+/* ── Contact block ──────────────────────────────────────── */
+
+.bw-privacy-contact {
+  text-align: center;
+  padding: 36px 24px;
+  background: #f2f2f2;
+  border-radius: 8px;
+  margin-bottom: 32px;
+}
+
+.bw-privacy-contact p {
+  font-size: 0.95rem;
+  color: #3a4a5c;
+  margin: 0 0 10px;
+}
+
+.bw-contact-email {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a2e5a;
+  text-decoration: none;
+  border-bottom: 2px solid #1a2e5a;
+  padding-bottom: 2px;
+}
+
+.bw-contact-email:hover {
+  opacity: 0.65;
+}
+
+/* ── Legal disclaimer ───────────────────────────────────── */
+
+.bw-legal-disclaimer {
+  font-size: 0.8rem;
+  color: #9aa5b4;
+  line-height: 1.65;
+  text-align: center;
+  font-style: italic;
+  padding: 0 24px;
+  margin: 0;
+}
+
+/* ── Responsive ─────────────────────────────────────────── */
+
+@media (max-width: 600px) {
+  .bw-privacy-hero {
+    padding: 40px 16px 28px;
+  }
+
+  .bw-privacy-body {
+    padding: 0 16px 60px;
+  }
+
+  .bw-accordion-trigger {
+    padding: 16px 16px;
+  }
+
+  .bw-accordion-panel {
+    padding: 4px 16px 18px;
+  }
+}
