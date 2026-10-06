@@ -1,5 +1,5 @@
 [build]
-    base = "frontend/"
+    main = "frontend/"
     command = "yarn deploy"
     publish = "dist"
 
