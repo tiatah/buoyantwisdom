@@ -1,9 +1,15 @@
 [build]
     base = "frontend/"
     command = "yarn deploy"
-    publish = "dist"  # ← adjust this to wherever your build outputs
+    publish = "dist"
 
-# DISABLE the plugins causing build failure
+[[plugins]]
+    package = "netlify-plugin-cache-nextjs"
+
+[[plugins]]
+    package = "netlify-plugin-cloudinary"
+
+# Disable the broken plugins
 [[plugins]]
     package = "netlify-plugin-visual-diff"
     [plugins.inputs]
@@ -13,10 +19,3 @@
     package = "netlify-plugin-inline-critical-css"
     [plugins.inputs]
         enabled = false
-
-# Keep these (they're working)
-[[plugins]]
-    package = "netlify-plugin-cache-nextjs"
-
-[[plugins]]
-    package = "netlify-plugin-cloudinary"
