@@ -5,6 +5,11 @@
    ============================================================ */
 
 /* ── Hero / intro block ─────────────────────────────────── */
+.hero-body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+}
 
 .bw-privacy-hero {
   text-align: center;
